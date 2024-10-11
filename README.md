@@ -14,6 +14,25 @@ pnpm dev
 bun dev
 ```
 
+## First commit
+read the next documentation -> https://ui.shadcn.com/docs/components/button
+npx shadcn@latest add button
+npx shadcn@latest add button --overwrite this is gonna over write the existing component
+
+## Extensions
+1.Simple react snippet
+ -> sfc
+
+2. next.nav
+
+### remove cache and run again
+rm -rf -next
+yarn dev
+
+## next Group folder is purely for organizing
+
+
+
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
