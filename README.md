@@ -18,6 +18,7 @@ bun dev
 read the next documentation -> https://ui.shadcn.com/docs/components/button
 npx shadcn@latest add button
 npx shadcn@latest add button --overwrite this is gonna over write the existing component
+yarn nlx shadcn@latest add button
 
 ## Extensions
 1.Simple react snippet
@@ -30,6 +31,19 @@ rm -rf -next
 yarn dev
 
 ## next Group folder is purely for organizing
+
+## commit 2
+yarn nlx shadcn-ui@latest add sheet
+yarn nlx shadcn@latest add form
+yarn nlx shadcn@latest add input
+yarn add react-hot-toast
+npm i -D prisma
+yarn add -D prisma
+npx prisma init
+yarn prisma init
+yarn add @prisma/client
+npx primas generate  yarn prisma generate   = this command add this to locally
+npx prisma db push  yarn prisma db push  = this command add this to planetscale.com
 
 
 
