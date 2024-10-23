@@ -7,6 +7,9 @@ services:
       - "27017:27017"
     volumes:
       - mongodb_data:/data/db
+    command: ["mongod", "--replSet", "rs0"]
+    network_mode: "host"
+    restart: always
 
 volumes:
   mongodb_data:

@@ -44,6 +44,19 @@ yarn prisma init
 yarn add @prisma/client
 npx primas generate  yarn prisma generate   = this command add this to locally
 npx prisma db push  yarn prisma db push  = this command add this to planetscale.com
+npx shadcn-ui@latest add textarea
+yarn nlx shadcn@latest add textarea
+Popover
+yarn add uploadthing @uploadthing/react
+
+yarn nlx shadcn@latest add popover
+yarn nlx shadcn@latest add command
+
+# Category
+https://ui.shadcn.com/docs/components/combobox
+
+1. create category in prisma - npx prisma studio 
+    node scripts/seed.ts
 
 
 

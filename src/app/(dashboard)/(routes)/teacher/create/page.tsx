@@ -40,7 +40,11 @@ const CreatePage = () => {
 
     const onSubmit = async (values: z.infer<typeof formSchema>) => {
         try {
+            console.log("values: ", values)
             const response = await axios.post("/api/courses", values);
+            if (response.status === 200) {
+                toast.success("Course created")
+            }
             router.push(`/teacher/courses/${response.data.id}`);
         } catch (error: any) {
             if(error.response) {
@@ -52,7 +56,6 @@ const CreatePage = () => {
             }
         }
     }
-
     return ( 
         <div className="max-w-5xl mx-auto flex md:items-center md:justify-center h-full p-6">
             <div>

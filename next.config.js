@@ -5,4 +5,5 @@ const nextConfig = {
         domains: ['utfs.io', 'img.clerk.com']
     },
 }
-export default nextConfig;
+
+module.exports = nextConfig
