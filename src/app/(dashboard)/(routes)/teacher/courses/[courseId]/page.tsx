@@ -10,6 +10,7 @@ import {ImageForm} from "./_components/image-form";
 import CategoryForm from "./_components/category-form";
 import PriceForm from "./_components/price-form";
 import AttachmentFormProps from "./_components/attachment-form";
+import ChapterForm from "./_components/chapters-form";
 
 
 
@@ -101,7 +102,7 @@ const CourseIdPage = async ({params}: {params: {courseId: string}}) => {
                                         Course Chapters 
                                     </h2>
                                 </div>
-
+                                <ChapterForm initialData={course} courseId={course.id}/>
                             </div>
                             <div>
                                 <div className="flex items-center gap-x-2">

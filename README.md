@@ -59,6 +59,13 @@ https://ui.shadcn.com/docs/components/combobox
     node scripts/seed.ts
 
 
+# drag and drop package
+npm i @hello-pangea/dnd
+yarn nlx shadcn@latest add badge
+npx nlx shadcn-ui@latest add badge
+
+
+
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
