@@ -63,8 +63,20 @@ https://ui.shadcn.com/docs/components/combobox
 npm i @hello-pangea/dnd
 yarn nlx shadcn@latest add badge
 npx nlx shadcn-ui@latest add badge
+yarn add react-quill
+npx shadcn-ui@latest add checkbox
+yarn nlx shadcn@latest add checkbox
+
+# new packages
+npm i zustand
+npm i react-confetti
+npx shadcn@latest add table  -> https://ui.shadcn.com/docs/components/data-table
+yarn nlx shadcn@latest add table
+yarn nlx shadcn@latest add dropdown-menu
+ 
 
 
+# DOCKER COMPOSE COMMANDS
 
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.

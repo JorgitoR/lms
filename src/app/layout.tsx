@@ -37,3 +37,5 @@ export default function RootLayout({
     </ClerkProvider>
   );
 }
+
+// TODO: add confetti
