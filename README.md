@@ -73,10 +73,18 @@ npm i react-confetti
 npx shadcn@latest add table  -> https://ui.shadcn.com/docs/components/data-table
 yarn nlx shadcn@latest add table
 yarn nlx shadcn@latest add dropdown-menu
- 
+
+
+# QUERY TABLE
+npm i query-string
+npm i react-icons
+yarn add query-string
+yarn add react-icons
 
 
 # DOCKER COMPOSE COMMANDS
+
+
 
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.

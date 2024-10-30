@@ -12,6 +12,8 @@ const NavbarRoutes = () => {
     const isTeacherPage = pathName?.startsWith("/teacher");
     const isPlayerPage  = pathName?.includes("/chapters");
 
+    // TODO: 
+
     return ( 
         <>
             <div className="flex gap-x-2 ml-auto">
