@@ -16,6 +16,7 @@ interface SearchPageProps {
 const SearchPage = async ({searchParamas}: SearchPageProps) => {
 
     const { userId } = auth();
+    console.log("user_ ", userId)
     
     if(!userId){
         return redirect("/");
@@ -27,10 +28,13 @@ const SearchPage = async ({searchParamas}: SearchPageProps) => {
         }
     });
 
+    console.log("searchParamas: ", searchParamas?.categoryId)
+
     const courses = await getCourses({
         userId,
         ...searchParamas,
     })
+
 
     return ( 
         <>

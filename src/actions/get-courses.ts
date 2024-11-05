@@ -20,6 +20,8 @@ export const getCourses = async ({
   title,
   categoryId
 }: GetCourses): Promise<CourseWithProgressWithCategory[]> => {
+
+  console.log("tittle: ", title)
   try {
     const courses = await db.course.findMany({
       where: {

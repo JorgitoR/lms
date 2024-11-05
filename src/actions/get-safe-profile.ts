@@ -9,6 +9,7 @@ export default async function getSafeProfile() {
   try {
 
     const { userId } = auth();
+    console.log(userId)
 
     if (!userId) {
         return redirect("/");
@@ -29,6 +30,8 @@ export default async function getSafeProfile() {
           updatedAt: true,
         },
       });
+
+      console.log("umm: ", currentProfile)
       
       if (!currentProfile) {
         return null;
