@@ -94,7 +94,11 @@ const CourseIdPage = async ({params}: {params: {courseId: string}}) => {
                             <CategoryForm 
                                 initialData={course} 
                                 courseId={course.id} 
-                                options={categories?.map((index) => ({ label: index.name, value: index.id })) || []} 
+                                options={(categories || []).map((category) => ({
+                                    label: category.name,
+                                    value: category.id,
+                                  }))}
+                                
                             />
                         </div>
                         <div className="space-y-6">

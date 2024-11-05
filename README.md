@@ -85,6 +85,10 @@ yarn add react-icons
 # DOCKER COMPOSE COMMANDS
 
 
+# Prisma
+npx prisma studio
+npx prisma migrate reset
+
 
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.

@@ -5,17 +5,46 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { LogOut } from "lucide-react";
+import SearchInput from "./search";
+import { Category, Course, Profile } from "@prisma/client";
 
-const NavbarRoutes = () => {
+export type CourseWithProgressWithCategory = Course & {
+    category: Category | null;
+    chapters: { id: string }[];
+    progress: number | null;
+};
+
+export type SafeProfile = Omit<
+  Profile,
+  "createdAt" | "updatedAt" 
+> & {
+  createdAt: string;
+  updatedAt: string;
+};
+
+
+interface NavbarRoutesProps  {
+    currentProfile?: SafeProfile | null
+  }
+
+  export const NavbarRoutes : React.FC<NavbarRoutesProps> = ({
+    currentProfile
+  }) => {
 
     const pathName = usePathname();
     const isTeacherPage = pathName?.startsWith("/teacher");
     const isPlayerPage  = pathName?.includes("/chapters");
+    const isSearchPage = pathName === "/search";
+    const isTeacher = currentProfile?.role === "ADMIN" || currentProfile?.role === "TEACHER";
 
-    // TODO: 
 
     return ( 
         <>
+            {isSearchPage && (
+                <div className="hidden md:block">
+                    <SearchInput />
+                </div>
+            )}
             <div className="flex gap-x-2 ml-auto">
                 {isTeacherPage || isPlayerPage ? (
                     <Link href="/">
@@ -24,7 +53,7 @@ const NavbarRoutes = () => {
                             Exit
                         </Button>
                     </Link>
-                ): (
+                ) : (
                     <Link href="/teacher/courses">
                         <Button size="sm" variant="ghost">
                             Teacher mode
