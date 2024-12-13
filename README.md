@@ -37,20 +37,20 @@ yarn dev
 - yarn nlx shadcn@latest add form
 - yarn nlx shadcn@latest add input
 - yarn add react-hot-toast
-npm i -D prisma
-yarn add -D prisma
-npx prisma init
-yarn prisma init
-yarn add @prisma/client
-npx primas generate  yarn prisma generate   = this command add this to locally
-npx prisma db push  yarn prisma db push  = this command add this to planetscale.com
-npx shadcn-ui@latest add textarea
-yarn nlx shadcn@latest add textarea
-Popover
-yarn add uploadthing @uploadthing/react
+- npm i -D prisma
+- yarn add -D prisma
+- npx prisma init
+- yarn prisma init
+- yarn add @prisma/client
+- npx primas generate  yarn prisma generate   = this command add this to locally
+- npx prisma db push  yarn prisma db push  = this command add this to planetscale.com
+- npx shadcn-ui@latest add textarea
+- yarn nlx shadcn@latest add textarea
+- Popover
+- yarn add uploadthing @uploadthing/react
 
-yarn nlx shadcn@latest add popover
-yarn nlx shadcn@latest add command
+- yarn nlx shadcn@latest add popover
+- yarn nlx shadcn@latest add command
 
 # Category
 https://ui.shadcn.com/docs/components/combobox
