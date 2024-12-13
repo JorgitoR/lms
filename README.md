@@ -33,10 +33,10 @@ yarn dev
 ## next Group folder is purely for organizing
 
 ## commit 2
-yarn nlx shadcn-ui@latest add sheet
-yarn nlx shadcn@latest add form
-yarn nlx shadcn@latest add input
-yarn add react-hot-toast
+- yarn nlx shadcn-ui@latest add sheet
+- yarn nlx shadcn@latest add form
+- yarn nlx shadcn@latest add input
+- yarn add react-hot-toast
 npm i -D prisma
 yarn add -D prisma
 npx prisma init
